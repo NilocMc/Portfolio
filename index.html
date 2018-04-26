@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Portfolio!</title>
@@ -62,6 +63,23 @@
     <section class="mywork text-center my-5">
         <h1>My Works</h1>
         <div class="mywork__slick m-md-5 mt-5">
+             <div class="px-md-5">
+                <iframe src="https://nilocmc.github.io/exam/" frameborder="0" class="mywork__iframe w-100"></iframe>
+                <div class="row text-left">
+                    <div class="col-md-4">
+                        <p class="mt-3 mb-0">Project Name</p>
+                        <h3>Bhromaon</h3>
+                    </div>
+                    <div class="col-4 d-sm-block d-none">
+                        <p class="mt-3 mb-0">Date</p>
+                        <h3>26/4/18</h3>
+                    </div>
+                    <div class="col-4 d-sm-block d-none">
+                        <p class="mt-3 mb-0">Description</p>
+                        <h3>Travel Website Template</h3>
+                    </div>
+                </div>
+            </div>
             <div class="px-md-5">
                 <a class="mywork__link" href="#">
                     <img class="img-fluid" src="img/cahee.png" srcset="img/cahee-2x.png 2x" alt="cahee">
@@ -73,22 +91,22 @@
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Date</p>
-                        <h3>26/4/18</h3>
+                        <h3>27/3/18</h3>
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Description</p>
-                        <h3>Work on cahee</h3>
+                        <h3>Buisness Website Template</h3>
                     </div>
                 </div>
             </div>
             <div class="px-md-5">
                 <a class="mywork__link" href="#">
-                    <img class="img-fluid" src="img/cahee.png" srcset="img/cahee-2x.png 2x" alt="cahee">
+                    <img class="img-fluid" src="img/bromaon.png" alt="bhromaon">
                 </a>
-                <div class="row text-left d-none">
+                <div class="row text-left">
                     <div class="col-md-4">
                         <p class="mt-3 mb-0">Project Name</p>
-                        <h3>Cahee</h3>
+                        <h3>Bhromaon</h3>
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Date</p>
@@ -96,14 +114,17 @@
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Description</p>
-                        <h3>Work on cahee</h3>
+                        <h3>Travel Website Template</h3>
                     </div>
                 </div>
             </div>
+           
         </div>
     </section>
     <section class="contact bg-dark py-5">
         <div class="container">
+            <div class="row">
+                <div class="col-md-10">
             <h2 class="text-white">Contact</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita autem eos modi excepturi enim quam, quisquam</p>
             <form>
@@ -115,15 +136,19 @@
                     <div class="col-md-6 md-form my-2 pr-4">
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
                     </div>
-                    <div class="col-12 md-form my-2 pr-4">
+                    <div class="col-12 md-form my-5 pr-4">
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary px-5 btn-lg dark-button text-uppercase">Let's Chat Now</button>
                 </div>
             </form>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            
         <nav>
             <a href=""></a>
             <a href=""></a>
@@ -131,7 +156,10 @@
         </nav>
         <a href=""></a>
         <p>lorem@lorem.com</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -139,7 +167,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script> -->
+
     <script>
     $(document).ready(function() {
         $('.mywork__slick').slick({

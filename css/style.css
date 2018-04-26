@@ -7364,7 +7364,6 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: white;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -7401,12 +7400,18 @@ a.text-dark:hover, a.text-dark:focus {
         background-color: #262626;
     }
     } */ }
+  .services__item p {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px; }
 
 .contact {
   color: #c6c6c6; }
 
 .header {
-  background-image: url(../img/picture.jpg);
+  background-image: url(../img/picture.jpg), -webkit-gradient(linear, left top, right top, from(white), color-stop(70%, white), color-stop(70%, black));
+  background-image: url(../img/picture.jpg), -webkit-linear-gradient(left, white 0%, white 70%, black 70%);
+  background-image: url(../img/picture.jpg), -o-linear-gradient(left, white 0%, white 70%, black 70%);
+  background-image: url(../img/picture.jpg), linear-gradient(to right, white 0%, white 70%, black 70%);
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
@@ -7417,15 +7422,25 @@ a.text-dark:hover, a.text-dark:focus {
     padding-top: 8%; }
   @media (max-width: 1199.98px) {
     .header {
-      background-size: 40vw;
+      background-image: url(../img/picture.jpg), -webkit-gradient(linear, left top, right top, from(black), to(black));
+      background-image: url(../img/picture.jpg), -webkit-linear-gradient(left, black 0%, black 100%);
+      background-image: url(../img/picture.jpg), -o-linear-gradient(left, black 0%, black 100%);
+      background-image: url(../img/picture.jpg), linear-gradient(to right, black 0%, black 100%);
+      background-size: 40vw, 40vw 100%;
       background-position: bottom right; } }
   @media (max-width: 991.98px) {
     .header {
-      background-size: 33vw;
+      background-image: url(../img/picture.jpg), -webkit-gradient(linear, left top, right top, from(black), to(black));
+      background-image: url(../img/picture.jpg), -webkit-linear-gradient(left, black 0%, black 100%);
+      background-image: url(../img/picture.jpg), -o-linear-gradient(left, black 0%, black 100%);
+      background-image: url(../img/picture.jpg), linear-gradient(to right, black 0%, black 100%);
+      background-size: 33vw, 33vw 100%;
       background-position: bottom right; } }
   @media (max-width: 767.98px) {
     .header {
       background-image: none; } }
+  .header p {
+    font-family: 'Playfair Display', serif; }
 
 .seperator {
   width: 30px;
@@ -7440,6 +7455,9 @@ a.text-dark:hover, a.text-dark:focus {
   @media (max-width: 767.98px) {
     .mywork__link {
       max-height: 100vw; } }
+
+.mywork__iframe {
+  height: 300px; }
 
 .slick-prev:before,
 .slick-next:before {
@@ -7529,3 +7547,7 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transition: .2s ease-out;
   -o-transition: .2s ease-out;
   transition: .2s ease-out; }
+
+.dark-button {
+  background-color: #262626;
+  border: none; }
