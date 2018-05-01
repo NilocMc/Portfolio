@@ -21,7 +21,7 @@
                     <p class="header__welcome">Welcome to the Portfolio of</p>
                     <h1 class="display-3 pb-3 fadeOnLoad">Colin McDonald</h1>
                     <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dignissimos, impedit eligendi ex, dicta reiciendis. Dicta tenetur accusamus incidunt sapiente voluptates velit, laborum nesciunt doloremque. Temporibus accusamus, rem tempore repellat!</p>
-                    <button class="btn btn-outline-info">See my work</button>
+                    <button class="btn btn-lg px-5 light-button text-uppercase">See my work</button>
                 </div>
             </div>
             <nav class="nav pb-3">
@@ -36,8 +36,8 @@
     </header>
     <section class="services py-5 bg-dark">
         <div class="container">
-            <h2 class="text-uppercase text-white">My Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate id, accusantium? Reprehenderit adipisci</p>
+            <h2 class="text-uppercase text-white pb-5">My Services</h2>
+            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate id, accusantium? Reprehenderit adipisci</p>
             <div class="row">
                 <div class="services__item col-md-4 py-2">
                     <h4 class="text-white">Website Design</h4>
@@ -61,10 +61,13 @@
         </div>
     </section>
     <section class="mywork text-center my-5">
+        <div class="container py-md-5 py-5">
         <h1>My Works</h1>
-        <div class="mywork__slick m-md-5 mt-5">
-             <div class="px-md-5">
-                <iframe src="https://nilocmc.github.io/exam/" frameborder="0" class="mywork__iframe w-100"></iframe>
+        <div class="mywork__slick">
+            <div class="px-md-5">
+                <a class="mywork__link" href="#">
+                    <img class="img-fluid" src="img/bhromaon.jpg" alt="bhromaon">
+                </a>
                 <div class="row text-left">
                     <div class="col-md-4">
                         <p class="mt-3 mb-0">Project Name</p>
@@ -82,26 +85,26 @@
             </div>
             <div class="px-md-5">
                 <a class="mywork__link" href="#">
-                    <img class="img-fluid" src="img/cahee.png" srcset="img/cahee-2x.png 2x" alt="cahee">
+                    <img class="img-fluid" src="img/cahee.jpg" srcset="img/cahee.jpg 1x, img/cahee-2x.png 2x" alt="cahee">
                 </a>
                 <div class="row text-left">
                     <div class="col-md-4">
                         <p class="mt-3 mb-0">Project Name</p>
-                        <h3>Cahee</h3>
+                        <h5>Cahee</h5>
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Date</p>
-                        <h3>27/3/18</h3>
+                        <h5>27/3/18</h5>
                     </div>
                     <div class="col-4 d-sm-block d-none">
                         <p class="mt-3 mb-0">Description</p>
-                        <h3>Buisness Website Template</h3>
+                        <h5>Buisness Website Template</h5>
                     </div>
                 </div>
             </div>
             <div class="px-md-5">
                 <a class="mywork__link" href="#">
-                    <img class="img-fluid" src="img/bromaon.png" alt="bhromaon">
+                    <img class="img-fluid" src="img/bhromaon.jpg" alt="bhromaon">
                 </a>
                 <div class="row text-left">
                     <div class="col-md-4">
@@ -118,48 +121,45 @@
                     </div>
                 </div>
             </div>
-           
+        </div>
         </div>
     </section>
     <section class="contact bg-dark py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-            <h2 class="text-white">Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita autem eos modi excepturi enim quam, quisquam</p>
-            <form>
-                <div class="form-row">
-                    <div class="col-md-6 md-form my-2 pr-4">
-                        <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp">
-                        <label for="emailinput">Email</label>
-                    </div>
-                    <div class="col-md-6 md-form my-2 pr-4">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                    </div>
-                    <div class="col-12 md-form my-5 pr-4">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
-                    </div>
-                    <button type="submit" class="btn btn-primary px-5 btn-lg dark-button text-uppercase">Let's Chat Now</button>
-                </div>
-            </form>
+                    <h2 class="text-white pb-4">Contact</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita autem eos modi excepturi enim quam, quisquam</p>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 md-form my-2 pr-4">
+                                <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp">
+                                <label for="emailinput">Email</label>
+                            </div>
+                            <div class="col-md-6 md-form my-2 pr-4">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                            </div>
+                            <div class="col-12 md-form my-5 pr-4">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message">
+                            </div>
+                            <button type="submit" class="btn btn-primary px-5 btn-lg dark-button text-uppercase">Let's Chat Now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer py-5 bg-dark text-white">
+    <footer class="footer py-4 bg-dark text-white">
         <div class="container">
-            
-        <nav>
+            <nav>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </nav>
             <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-        <a href=""></a>
-        <p>lorem@lorem.com</p>
+            <p>lorem@lorem.com</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -167,17 +167,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <!-- <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script> -->
-
+    <script src="js/main-build.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
     <script>
     $(document).ready(function() {
         $('.mywork__slick').slick({
             centerMode: true,
             arrows: true,
             slidesToShow: 1,
-            responsive: [
-            {
+            responsive: [{
                 breakpoint: 480,
                 settings: {
                     arrows: false,
